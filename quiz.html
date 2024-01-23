@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz sur le Football</title>
+    <style>
+        body {
+            background-image: url('imagebackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        button#valider {
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .quiz h1 {
+
+            color: #41f1fb;
+            font-size: 40px;
+            margin-bottom: 50px;
+
+        }
+
+        .quiz h2 {
+            color: #235674;
+            font-size: 20px;
+            /* Adjust font size as needed */
+            margin-bottom: 20px;
+            margin-left: 15px;
+
+            /* Add margin for spacing */
+        }
+
+        .quiz .question input {
+            margin-bottom: 10px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+
+        .resultats p {
+            font-size: 30px;
+            /* Adjust font size for <p> elements */
+            color: #eb1e55;
+            /* Adjust text color for <p> elements */
+            margin-top: 30px;
+            /* Add margin for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quiz h1">
+        <center>
+
+            <h1>Quiz sur le Football</h1>
+        </center>
+    </div>
+    <div class="quiz">
+        <div class="question">
+            <h2> 1.Quel est le nom du sport le plus populaire au monde ?</h2>
+            <input type="radio" name="q0" value="Handball"> Handball <br>
+            <input type="radio" name="q0" value="football"> Football <br>
+            <input type="radio" name="q0" value="Basketball"> Basketball
+        </div>
+
+        <div class="question">
+            <h2>2.Combien de joueurs y a-t-il dans une équipe de football ?</h2>
+            <input type="radio" name="q1" value="11"> 11 <br>
+            <input type="radio" name="q1" value="10"> 10 <br>
+            <input type="radio" name="q1" value="12"> 12
+        </div>
+
+        <div class="question">
+            <h2>3.Quelle est la durée d'un match de football ?</h2>
+            <input type="radio" name="q2" value="80 minutes"> 80 minutes <br>
+            <input type="radio" name="q2" value="100 minutes"> 100 minutes <br>
+            <input type="radio" name="q2" value="90 minutes"> 90 minutes
+        </div>
+
+        <div class="question">
+            <h2>4.Quel est le but du jeu de football ?</h2>
+            <input type="radio" name="q4" value="Marquer plus de buts"> Marquer plus de buts que l'équipe adverse en
+            faisant passer le ballon dans le but de l'équipe adverse <br>
+            <input type="radio" name="q4" value="Marquer plus de points"> Marquer plus de points que l'équipe adverse en
+            faisant passer le ballon dans le cercle central <br>
+            <input type="radio" name="q4" value="Marquer plus de tirs"> Marquer plus de tirs au but que l'équipe adverse
+        </div>
+        <div class="question">
+            <h2>5.Quelle est la principale fonction du VAR ?</h2>
+            <input type="radio" name="q3" value="arbitre"> Aider l'arbitre à prendre des décisions plus
+            justes <br>
+            <input type="radio" name="q3" value="arbitrales"> Réduire le nombre d'erreurs arbitrales <br>
+            <input type="radio" name="q3" value="spectacle"> Améliorer le spectacle du football
+        </div>
+        <div class="question">
+            <h2>6.Quelle est la taille d'un terrain de football ?</h2>
+            <input type="radio" name="q5" value="100 à 110 mètres"> 100 à 110 mètres de long et 64 à 75 mètres de large
+            <br>
+            <br>
+            <input type="radio" name="q5" value="100 à 120 mètres"> 100 à 120 mètres de long et 64 à 80 mètres de large
+            <br>
+            <br>
+            <input type="radio" name="q5" value="100 à 130 mètres"> 100 à 130 mètres de long et 64 à 85 mètres de large
+        </div>
+
+        <div class="question">
+            <h2>7.Quel est le meilleur club de football au monde ?</h2>
+            <input type="radio" name="q6" value="Real Madrid"> Real Madrid <br>
+            <input type="radio" name="q6" value="FC Barcelone"> FC Barcelone <br>
+            <input type="radio" name="q6" value="Manchester United"> Manchester United
+        </div>
+
+        <div class="question">
+            <h2>8.Qui est le meilleur joueur de football de tous les temps ?</h2>
+            <input type="radio" name="q7" value="Cristiano Ronaldo"> Cristiano Ronaldo <br>
+            <input type="radio" name="q7" value="Diego Maradona"> Diego Maradona <br>
+            <input type="radio" name="q7" value="Lionel Messi"> Lionel Messi
+        </div>
+
+        <div class="question">
+            <h2>9.Quel est le meilleur but de tous les temps ?</h2>
+            <input type="radio" name="q8" value=" Zidane"> Le but de Zinedine Zidane contre la Juventus en finale de la
+            Ligue des champions 2002 <br>
+            <input type="radio" name="q8" value="Maradona">Le but de Diego Maradona contre l'Angleterre en quart de
+            finale de la Coupe du monde 1986 <br>
+            <input type="radio" name="q8" value="Pélé ">Le but de Pelé contre la France en finale de la Coupe du monde
+            1958
+        </div>
+
+        <div class="question">
+            <h2>10.Quel est le plus grand match de football de tous les temps ?</h2>
+            <input type="radio" name="q9" value=" le Brésil et l'Uruguay">La finale de la Coupe du monde 1950 entre le
+            Brésil et l'Uruguay <br>
+            <input type="radio" name="q9" value=" l'Argentine et la France">La finale de la Coupe du monde 2022 entre
+            l'Argentine et la France <br>
+            <input type="radio" name="q9" value=" le Brésil et l'Allemagne">La finale de la Coupe du monde 2002 entre le
+            Brésil et l'Allemagne
+        </div>
+
+
+    </div>
+    <br>
+    <div class="resultats">
+        <button class="quiz button " id="valider">Valider</button>
+        <p class="resultats p">Votre note est de : <span id="note"></span></p>
+        <p class="resultats p">Les réponses correctes sont :</p>
+        <ul id="reponses-correctes"></ul>
+    </div>
+
+    <script>
+        document.getElementById("valider").addEventListener("click", calculerNote);
+        function calculerNote() {
+            let questions = [
+                { question: "Quel est le nom du sport le plus populaire au monde ?", bonnesReponses: [" football"] },
+                { question: "Combien de joueurs y a-t-il dans une équipe de football ?", bonnesReponses: ["11"] },
+                { question: "Quelle est la durée d'un match de football ?", bonnesReponses: ["90 minutes"] },
+                { question: "Quel est le but du jeu de football ?", bonnesReponses: ["Marquer plus de points"] },
+                { question: "Quelle est la principale fonction du VAR ?", bonnesReponses: ["arbitre"] },
+                { question: "Quelle est la taille d'un terrain de football ?", bonnesReponses: ["100 à 110 mètres"] },
+                { question: "Quel est le meilleur club de football au monde ?", bonnesReponses: ["Real Madrid"] },
+                { question: "Qui est le meilleur joueur de football de tous les temps ?", bonnesReponses: ["Cristiano Ronaldo"] },
+                { question: "Quel est le meilleur but de tous les temps ?", bonnesReponses: ["Maradona"] },
+                { question: "Quel est le plus grand match de football de tous les temps ?", bonnesReponses: ["l'Argentine et la France"] },
+            ];
+            let userAnswers = {};
+            for (let i = 0; i < questions.length; i++) {
+                let question = questions[i];
+                let réponse = document.querySelector("input[name='q" + i + "']:checked");
+                userAnswers[question.question] = réponse ? réponse.value : null;
+            }
+            if (Object.values(userAnswers).includes(null)) {
+                alert("Veuillez répondre à toutes les questions avant de valider.");
+                return;
+            }
+            let note = 0;
+            let reponsesCorrectes = document.getElementById("reponses-correctes");
+            reponsesCorrectes.innerHTML = "";
+
+            for (let i = 0; i < questions.length; i++) {
+                let bonnesReponses = questions[i].bonnesReponses.join(", ");
+                let userAnswer = userAnswers[questions[i].question];
+
+                if (userAnswer !== null) {
+                    reponsesCorrectes.innerHTML += "<li>Question " + (i + 1) + " : " + bonnesReponses + "</li>";
+                    if (questions[i].bonnesReponses.includes(userAnswer)) {
+                        note++;
+                    }
+                }
+            }
+            note /= questions.length;
+            document.getElementById("note").textContent = note.toFixed(2);
+            document.getElementById("user-answers").value = "Vos réponses :\n";
+            for (let question in userAnswers) {
+                let questionNumber = parseInt(question.match(/\d+/)[0]) + 1;
+                document.getElementById("user-answers").value +=
+                    "Question " + questionNumber + " : " + userAnswers[question] + "\n";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .navbar {
+            position: absolute;
+
+            top: 50;
+            width: 24%;
+            background-color: #f0f0f0;
+
+        }
+
+        .article-container {
+
+            position: relative;
+            top: 0px;
+            margin-left: 370px;
+        }
+
+        .header {
+
+            width: 100%;
+            max-height: 40%;
+            background-color: #f0f0f0;
+
+        }
+
+
+        button#valider {
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<header class="header">
+    <br>
+    <h1 style="font-size: 50px; color: blue; text-align: center;"> Contact</h1>
+    <br>
+</header>
+
+<body>
+
+
+    <div class="navbar">
+        <iframe src="navbar.html" width="350" height="850"></iframe>
+    </div>
+    <div class="article-container">
+
+        <body>
+            <fieldset>
+                <legend>
+                    <h1>Contactez moi par E-mail</h1>
+                </legend>
+
+
+                <h3>Votre E-mail:</h3>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <h3>Mon E-mail:</h3>
+
+                <input type="email" id="email" name="email" cols="30" required> <br>
+
+
+                <h3>Your Message:</h3>
+                <textarea id="message" name="message" rows="6" cols="30" required></textarea>
+                <br>
+                <button id="valider">Envoyer</button>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h1>Contactez moi par téléphone</h1>
+                </legend>
+                <h3>Numéro de téléphone : 97474555</h3>
+
+            </fieldset>
+
+
+        </body>
+
+</html>
